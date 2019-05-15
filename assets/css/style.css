@@ -1,0 +1,132 @@
+html,
+body {
+  margin: 0 auto;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/dark-paths.png);
+  background-repeat: repeat;
+  font-family: "Kaushan Script", cursive;
+}
+
+.header {
+  display: flex;
+  background-color: #114181;
+  color: #ffffff;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 2000;
+  border-bottom: 10px solid #7f8897;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 5px black;
+  background-image: url("../images/psychic31.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.h1 {
+  margin: auto;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.h3 {
+  padding-top: 38px;
+  color: whitesmoke;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+#letterbox {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  margin: 108.5px auto 169.5px auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 96px;
+}
+
+.footer {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  background-color: #114181;
+  border-top: 10px solid #7f8897;
+  color: whitesmoke;
+  justify-content: space-between;
+  justify-items: space-between;
+}
+
+.box {
+  display: flex;
+  width: 100px;
+  height: 75px;
+  font-size: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#wins,
+#losses,
+#guess-remain {
+  font-size: inherit;
+  width: 2.5em;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  color: whitesmoke;
+  background-color: transparent;
+}
+label {
+  margin: auto;
+  display: inline-block;
+}
+#guesses {
+  font-size: inherit;
+  width: 12.5em;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  color: whitesmoke;
+  padding: 5px;
+  background-color: transparent;
+}
+
+#message {
+  margin: 20px auto;
+  width: 50vw;
+  text-align: center;
+  line-height: 3em;
+  font-size: 18px;
+  color: whitesmoke;
+}
+@media only screen and (max-width: 930px) {
+  .box {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .box {
+    font-size: 12px;
+  }
+}
