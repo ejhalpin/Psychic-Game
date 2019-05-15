@@ -93,3 +93,7 @@ function getKeyPressed(event) {
     update();
   }
 }
+
+document.getElementById("autokey").focus();
+document.getElementById("autokey").blur();
+document.getElementById("autokey").focus();
