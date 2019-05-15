@@ -130,3 +130,7 @@ label {
     font-size: 12px;
   }
 }
+
+#autokey {
+  display: none;
+}
