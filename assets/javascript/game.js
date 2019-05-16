@@ -36,6 +36,7 @@ function update() {
 }
 
 function start() {
+  document.getElementById("letterbox").textContent = "";
   document.getElementById("letterbox").textContent = "?";
   targetLetter = letters[Math.floor(Math.random() * 25)];
   guessCount = 10;
@@ -53,6 +54,7 @@ function getKeyPressed(event) {
   if (key === targetLetter) {
     document.getElementById("message").textContent = messages[6];
     wins++;
+    document.getElementById("letterbox").textContent = "";
     document.getElementById("letterbox").textContent = targetLetter;
     update();
     window.setTimeout(function() {
@@ -79,6 +81,7 @@ function getKeyPressed(event) {
     update();
     window.setTimeout(function() {
       document.getElementById("message").textContent = messages[0];
+      document.getElementById("letterbox").textContent = "";
       document.getElementById("letterbox").textContent = targetLetter;
       boot = false;
     }, 1500);
