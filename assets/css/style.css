@@ -130,11 +130,13 @@ label {
     font-size: 12px;
   }
 }
-
-#autokey:focus {
-  scale: 1;
+#autokey {
   width: 0;
   height: 0;
   padding: 0;
   outline: none;
+  background-color: transparent;
+}
+#autokey:focus {
+  scale: 1;
 }
