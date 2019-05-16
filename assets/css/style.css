@@ -3,6 +3,8 @@ body {
   margin: 0 auto;
 }
 body {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   background-image: url(../images/dark-paths.png);
@@ -148,4 +150,122 @@ label {
 }
 #autokey:focus {
   scale: 1;
+}
+
+@media only screen and (max-width: 640px) {
+  .header {
+    position: static;
+    display: flex;
+    background-color: #114181;
+    color: #ffffff;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 2000;
+    border-bottom: 5px solid #7f8897;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  .display {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px white;
+    background-color: #114181;
+    text-align: center;
+    background-image: none;
+  }
+  .h1 {
+    margin: auto;
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+
+  .h3 {
+    padding-top: 40px;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-size: 1rem;
+  }
+
+  #letterbox {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: 50px auto auto auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+  }
+
+  .footer {
+    flex: 1 0 auto;
+    position: none;
+    display: flex;
+    flex-direction: column-reverse;
+    bottom: 0;
+    width: 100%;
+    background-color: #114181;
+    border-top: 10px solid #7f8897;
+    color: whitesmoke;
+  }
+
+  .box {
+    display: flex;
+    width: 25vw;
+    height: 2.4em;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  #wins,
+  #losses,
+  #guess-remain {
+    font-size: inherit;
+    width: 2.5em;
+    font-family: inherit;
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    background-color: transparent;
+  }
+  label {
+    margin: auto;
+    display: inline-block;
+  }
+  #guesses {
+    font-size: inherit;
+    width: 12.5em;
+    font-family: inherit;
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    padding: 5px;
+    background-color: transparent;
+  }
+
+  #message {
+    margin: 20px auto;
+    width: 50vw;
+    text-align: center;
+    line-height: 3em;
+    font-size: 14px;
+    color: whitesmoke;
+  }
+  .icon {
+    margin: 0 auto;
+    width: 50vw;
+    text-align: center;
+    line-height: 1em;
+    font-size: 16px;
+    color: whitesmoke;
+  }
 }
