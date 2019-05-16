@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <title>Psychic Game</title>
   </head>
 
   <body onkeydown="getKeyPressed(event)">
@@ -19,10 +25,11 @@
     </section>
     <section id="message">
       Press any key to begin...
+      <i class="fas fa-keyboard" onclick="giveFocus()"></i>
+      <input type="text" id="autokey" />
     </section>
     <footer class="footer">
       <div class="box" style="width:225px;">
-        <input id="autokey" />
         <label for="wins">Wins: </label>
         <input type="text" id="wins" value="0" readonly />
         <label for="losses">Losses: </label>

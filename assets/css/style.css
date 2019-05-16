@@ -131,6 +131,10 @@ label {
   }
 }
 
-#autokey {
-  display: none;
+#autokey:focus {
+  scale: 1;
+  width: 0;
+  height: 0;
+  padding: 0;
+  outline: none;
 }
