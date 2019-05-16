@@ -199,12 +199,13 @@ label {
   }
 
   #letterbox {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    margin: 5px auto auto auto;
-    justify-content: center;
-    align-items: center;
+    width: auto;
+    height: auto;
+    display: box;
+    margin: 0 auto;
+    justify-content: none;
+    align-items: none;
+    text-align: center;
     font-size: 40px;
     color: white;
   }
