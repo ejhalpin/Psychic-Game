@@ -15,38 +15,29 @@
     <title>Psychic Game</title>
   </head>
 
-  <body onkeydown="getKeyPressed(event)">
-    <header class="header">
-      <div class="h1">The Psychic Game</div>
-    </header>
-    <section class="display">
-      <div class="h3">Guess what letter I'm thinking of...</div>
-      <div id="letterbox">?</div>
-    </section>
-    <section id="message">
-      Press any key to begin...
-    </section>
-    <div class="icon">
-      <i class="fas fa-keyboard" onclick="giveFocus()"></i>
-      <input type="text" id="autokey" />
+  <body>
+    <div class="container">
+      <header class="h1">
+        The Psychic Game
+      </header>
+      <div class="sub-header h2">
+        Guess what letter I am thinking of
+      </div>
+      <div class="letter-box"><span id="letter-box">?</span></div>
+      <div class="message h2">
+        <span id="message">press any key to play. <i id="keyboard-icon" class="fas fa-keyboard" onclick="doLayout()"></i></span>
+      </div>
+      <div class="wins h3">Wins: <span id="wins">0</span></div>
+      <div class="losses h3">Losses: <span id="losses">0</span></div>
+      <div class="guess-label h3  border-lr">
+        <em>Your guesses so far:</em>
+      </div>
+      <div class="guesses h3  border-lr">
+        <span id="guesses">...</span>
+      </div>
+      <div class="guesses-remaining h3">Guesses remaining: <span id="guesses-remaining">10</span></div>
+      <div class="flex-keyboard" id="keyboard"></div>
     </div>
-
-    <footer class="footer">
-      <div class="box" style="width:225px;">
-        <label for="wins">Wins: </label>
-        <input type="text" id="wins" value="0" readonly />
-        <label for="losses">Losses: </label>
-        <input type="text" id="losses" value="0" readonly />
-      </div>
-      <div class="box" style="width:197px;">
-        <label for="guess-remain">Guesses remaining: </label>
-        <input type="text" id="guess-remain" value="10" readonly />
-      </div>
-      <div class="box" style="width:378px;">
-        <label for="guesses">Your guesses so far: </label>
-        <input type="text" id="guesses" value="..." readonly />
-      </div>
-    </footer>
 
     <script type="text/javascript" src="assets/javascript/game.js"></script>
   </body>
