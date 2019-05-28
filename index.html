@@ -5,40 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|VT323&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <title>Psychic Game</title>
   </head>
 
   <body>
-    <div class="container">
-      <header class="h1">
-        The Psychic Game
-      </header>
-      <div class="sub-header h2">
-        Guess what letter I am thinking of
+    <div id="container">
+      <div id="button-box">
+        <button id="play-intro">Play</button>
       </div>
-      <div class="letter-box"><span id="letter-box">?</span></div>
-      <div class="message h2">
-        <span id="message">press any key to play. <i id="keyboard-icon" class="fas fa-keyboard" onclick="doLayout()"></i></span>
+      <div class="frame">
+        <div class="darkness">
+          <div id="dialogue"></div>
+        </div>
+        <div class="boulder"></div>
+        <div id="background" class="cave"></div>
       </div>
-      <div class="wins h3">Wins: <span id="wins">0</span></div>
-      <div class="losses h3">Losses: <span id="losses">0</span></div>
-      <div class="guess-label h3  border-lr">
-        <em>Your guesses so far:</em>
-      </div>
-      <div class="guesses h3  border-lr">
-        <span id="guesses">...</span>
-      </div>
-      <div class="guesses-remaining h3">Guesses remaining: <span id="guesses-remaining">10</span></div>
-      <div class="flex-keyboard" id="keyboard"></div>
     </div>
-
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/intro.js"></script>
   </body>
 </html>
+
+<!--https://gph.is/299Wazb link to background giphy-->

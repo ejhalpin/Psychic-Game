@@ -49,7 +49,6 @@ function start() {
 
 function getKeyPressed(event) {
   var key = event.key;
-  console.log(key);
   if (!boot) {
     bootup();
     return;
